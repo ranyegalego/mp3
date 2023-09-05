@@ -1,0 +1,32 @@
+<h2>Прослушать mp3 звуки</h2>
+<div style="display: flex;">
+
+    <table>
+    <tr>
+      <th>ID</th>
+      <th>Звук</th>
+      <th>Наименование файла</th>
+    </tr>
+    <tr
+      *ngFor="let sound of sounds; let i = index"
+    >
+      <td>{{ i + 1 }}</td>
+      <td>{{ sound.name }}</td>
+      <td>{{ sound.link }}</td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th>Ссылка</th>
+    </tr>
+    <tr>
+     <td><a id="a1" href="http://elenaturkka.ru/audio/iodin.mp3" onclick="document.querySelector('audio').play()">Слушать музыку</a></td>
+    </tr>
+    <tr>
+      <td><a id="a2" href="http://elenaturkka.ru/audio/delight.mp3" onclick="document.querySelector('audio').play()">Слушать музыку</a></td>
+     </tr>
+     <tr>
+      <td><a id="a3" href="http://elenaturkka.ru/audio/ots.mp3" onclick="document.querySelector('audio').play()">Слушать музыку</a></td>
+     </tr>
+  </table>
+</div>

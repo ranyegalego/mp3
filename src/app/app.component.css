@@ -1,0 +1,33 @@
+input {
+  width: 90%;
+  padding: 8px 2px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+th {
+  background-color: rgb(38, 0, 255);
+  border: 1px solid rgb(0, 247, 255);
+}
+td {
+  border: 1px solid #dddddd;
+}
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #8df3fe;
+}
+.myAudio {
+  padding-left: 20px;
+}
+div {
+  margin:50px;
+}
